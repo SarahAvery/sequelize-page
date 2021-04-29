@@ -1,3 +1,1 @@
-import "../resources/sass/main";
-
-console.log("Hello");
+import "../resources/scss/main";
