@@ -7,11 +7,12 @@
     "chalk": "^4.1.0",
     "cssnano": "^4.1.10",
     "gh-pages": "^3.1.0",
-    "sass": "^1.27.0"
+    "sass": "^1.38.0"
   },
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./",
+    "start": "parcel ./pages/index.html",
+    "build": "parcel build ./pages/index.html --public-url ./",
     "deploy": "node deploy.js"
-  }
+  },
+  "author": "S Avery <sarahashavery@gmail.com>"
 }

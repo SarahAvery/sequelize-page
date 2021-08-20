@@ -1,6 +1,20 @@
-// test
+@import "_mixins.scss";
+@import "components/components";
+
+// FONTS
 
 body {
   height: 100%;
-  background-color: lightcoral;
+  background-color: rgb(245, 245, 245);
+}
+
+.visually-hidden {
+  background-color: #fff;
+  color: #000;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
 }
