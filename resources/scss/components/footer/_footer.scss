@@ -1,0 +1,20 @@
+footer {
+  background-color: rgb(100, 149, 237);
+  color: rgb(245, 245, 245);
+
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+}
+
+.name {
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+}
