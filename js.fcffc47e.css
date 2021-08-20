@@ -2,6 +2,11 @@
 --------------------------------*/
 /* Header
 --------------------------------*/
+header {
+  height: 80px;
+  background-color: cornflowerblue;
+}
+
 /* Navigation
 --------------------------------*/
 /* Navigation
@@ -11,98 +16,133 @@ main {
   margin: 0 5%;
   line-height: 1.2;
 }
-main .wrapper {
+
+.wrapper {
   max-width: 900px;
   margin: 0 auto;
 }
-main .title {
+
+.title-block {
+  margin: 30px 20px;
+}
+
+.title {
   font-size: 46px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   text-align: center;
-  margin: 40px 20px;
 }
-main .subtitle {
+
+.subtitle {
   width: auto;
   font-size: 24px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px 0;
 }
-main .para {
+
+.para {
   padding: 8px 0;
   font-size: 20px;
   line-height: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-main .underline {
+
+.underline {
   text-decoration: underline;
 }
-main .centered-text {
+
+.centered-text {
   text-align: center;
 }
-main article {
+
+.info {
+  margin: 0 auto;
+  text-align: center;
+  width: 280px;
+}
+.info .date {
+  font-style: italic;
+  margin-left: 14px;
+}
+
+article {
   padding: 20px 5%;
 }
-main section {
+
+section {
   margin: 30px 0;
 }
-main .img-container {
+
+.img-container {
   margin: 15px 0;
   width: 100%;
   display: flex;
   align-items: center;
 }
-main .img-container img {
+.img-container img {
   object-fit: contain;
 }
-main .img-container img.code {
+.img-container img.code {
   max-width: 600px;
 }
-main .img-container img.screen-shot {
-  width: 200px;
+.img-container img.screen-shot {
+  width: 300px;
 }
-main .img-container img.full-screen {
+.img-container img.full-screen {
   object-fit: contain;
   width: 800px;
 }
-main pre {
+
+pre {
   background-color: #eee;
   padding: 5px;
 }
-main code {
-  color: #eee;
+
+code {
+  color: #eeeeee;
   padding: 0 10px;
-  background-color: #333;
+  background-color: #333333;
   width: auto;
   margin: 2px 0;
   font-size: 16px;
 }
-main ol {
+
+ol {
   margin-left: 20px;
 }
-main span.method {
+
+span.method {
   color: #0f2eb8;
   font-style: italic;
 }
 
 /* Footer
 --------------------------------*/
+footer {
+  background-color: cornflowerblue;
+  color: whitesmoke;
+}
+footer li {
+  list-style: none;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.name {
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
 body {
   height: 100%;
   background-color: whitesmoke;
-}
-
-.visually-hidden {
-  background-color: #fff;
-  color: #000;
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*# sourceMappingURL=/js.fcffc47e.css.map */
