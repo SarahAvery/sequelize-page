@@ -59,7 +59,6 @@
           <div>
             <p class="subtitle">How do we use it?</p>
             <p class="para">
-              <!-- <span class="subtitle">How do we use it?</span> -->
               In our case, we will be talking about using Sequelize with
               Postgres. You will need to install Sequelize, and Sequelize-cli.
             </p>
@@ -94,8 +93,8 @@
               <img
                 class="code"
                 src="../resources/img/establish-connection.png"
-                alt=""
               />
+              <figcaption>util/database.js</figcaption>
             </div>
           </div>
         </section>
@@ -112,15 +111,21 @@
             <p class="para">
               The model tells Sequelize several things about the entity it
               represents, such as the name of the table in the database and
-              which columns it has (and their data types).”.
+              which columns it has (and their data types).” ~
+              <a
+                href="https://sequelize.org/master/manual/model-basics.html"
+                class="ref"
+                target="_blank"
+                >sequelize.org</a
+              >.
             </p>
 
             <p class="para">
               Here is a Customer model, which is our first entity in our
-              database. We are mapping sequel tables into JavaScript objects. To
+              database. We are mapping SQL tables into JavaScript objects. To
               create a customer table, we need to define our fields in the model
               by using <span class="method">sequelize.define()</span>. Define
-              can take in three parameters the table name, attributes, and
+              can take in three parameters, the table name, attributes, and
               options. In our case below, we are only focusing on our table
               name, and attributes.
             </p>
@@ -134,16 +139,14 @@
             </p>
 
             <div class="img-container">
-              <img
-                class="code"
-                src="../resources/img/models-customer.png"
-                alt=""
-              />
+              <img class="code" src="../resources/img/models-customer.png" />
+              <figcaption>models/customer.js</figcaption>
             </div>
 
             <p class="para">We also have an Order model.</p>
             <div class="img-container">
-              <img class="code" src="../resources/img/model-order.png" alt="" />
+              <img class="code" src="../resources/img/model-order.png" />
+              <figcaption>models/order.js</figcaption>
             </div>
           </div>
         </section>
@@ -164,7 +167,8 @@
               will translate our models into tables.
             </p>
             <div class="img-container">
-              <img class="code" src="../resources/img/sync.png" alt="" />
+              <img class="code" src="../resources/img/sync.png" />
+              <figcaption>index.js</figcaption>
             </div>
             <p class="para">
               In the terminal, run <code>node index.js</code>. You should now be
@@ -175,7 +179,6 @@
               <img
                 class="full-screen"
                 src="../resources/img/sequelize-test-db.png"
-                alt=""
               />
             </div>
           </div>
@@ -251,16 +254,12 @@
               <img
                 class="code"
                 src="../resources/img/customer-populate-1.png"
-                alt=""
               />
+              <figcaption>index.js</figcaption>
             </div>
             <p class="para">Database</p>
             <div class="img-container">
-              <img
-                class="full-screen"
-                src="../resources/img/customer-pop-1-db.png"
-                alt=""
-              />
+              <img class="full-screen" src="../resources/img/customer-pop-1-db.png" />
             </div>
             <p class="para">
               Next we need to add an order for our customer. We have available a
@@ -272,10 +271,10 @@
             </p>
             <div class="img-container">
               <img
-                class="full-screen"
+                class="code"
                 src="../resources/img/customer-order-create.png"
-                alt=""
               />
+              <figcaption>index.js</figcaption>
             </div>
             <p class="para">
               Again, we run our node command, and can see in our database that
@@ -312,33 +311,21 @@
               <img
                 class="code"
                 src="../resources/img/customer-order-select.png"
-                alt=""
               />
+              <figcaption>index.js</figcaption>
             </div>
             <p class="para">Console log</p>
             <div class="img-container">
               <img
                 class="full-screen"
                 src="../resources/img/console-log-query.png"
-                alt=""
               />
             </div>
             <p class="para">
               Here we can see that Sequelize made the Select query, and returned
               all the orders where the customerId was equal to 1.
             </p>
-            <div class="img-container">
-              <img
-                class="full-screen"
-                src="../resources/img/customer-order-create.png"
-                alt=""
-              />
-            </div>
-            <p class="para">
-              Again, we run our node command, and can see in our database that
-              the order was successfully created, with the customerId being 1.
-            </p>
-          </div>
+           
         </section>
         <hr />
         <section id="conclusion">
